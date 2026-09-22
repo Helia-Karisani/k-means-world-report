@@ -1,13 +1,13 @@
-## 🌍 K-Means Clustering on World Happiness Data
+## K-Means Clustering on World Happiness Data
 
-### 📖 Project Overview
+### Project Overview
 
 This project applies **K-Means Clustering** to the *World Happiness Report* dataset to uncover groups of countries that share similar social and economic characteristics.
 By analyzing factors like GDP, social support, and healthy life expectancy, this notebook explores how nations cluster based on happiness-related metrics.
 
 ---
 
-### 📊 Dataset
+### Dataset
 
 **File:** `happiness_report.csv`
 The dataset contains the following key features:
@@ -25,7 +25,7 @@ The dataset contains the following key features:
 
 ---
 
-### ⚙️ Steps and Methods
+### Steps and Methods
 
 1. **Data Import & Cleaning**
    Loaded and inspected the dataset using `pandas`, removed unused columns, and handled scaling with `StandardScaler`.
@@ -50,7 +50,7 @@ The dataset contains the following key features:
 
 ---
 
-### 🧠 Key Findings
+### Key Findings
 
 * **Cluster 0:** High GDP, strong social support, high life expectancy, low corruption — *most developed countries*.
 * **Cluster 1:** Medium GDP and social support, moderate life expectancy — *transitional economies*.
@@ -58,7 +58,7 @@ The dataset contains the following key features:
 
 ---
 
-### 🛠️ Technologies Used
+### Technologies Used
 
 * **Python 3**
 * **pandas**, **numpy**
@@ -68,7 +68,7 @@ The dataset contains the following key features:
 
 ---
 
-### 📸 Visualization Example
+### Visualization Example
 
 ```python
 # Example: Choropleth Map of Clusters
@@ -89,7 +89,7 @@ iplot(choromap)
 
 ---
 
-### 🧩 File Structure
+### File Structure
 
 ```
 ├── happiness_report.csv
@@ -99,7 +99,7 @@ iplot(choromap)
 
 ---
 
-### 🚀 How to Run
+### How to Run
 
 1. Clone the repository:
 
