@@ -52,9 +52,9 @@ The dataset contains the following key features:
 
 ### Key Findings
 
-* **Cluster 0:** High GDP, strong social support, high life expectancy, low corruption — *most developed countries*.
-* **Cluster 1:** Medium GDP and social support, moderate life expectancy — *transitional economies*.
-* **Cluster 2:** Low GDP, lower social support, high corruption — *developing nations*.
+* **Cluster 0:** High GDP, strong social support, high life expectancy, low corruption, *most developed countries*.
+* **Cluster 1:** Medium GDP and social support, moderate life expectancy, *transitional economies*.
+* **Cluster 2:** Low GDP, lower social support, high corruption, *developing nations*.
 
 ---
 
