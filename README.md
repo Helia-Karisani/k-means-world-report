@@ -2,15 +2,14 @@
 
 ### Project Overview
 
-This project applies **K-Means Clustering** to the *World Happiness Report* dataset to uncover groups of countries that share similar social and economic characteristics.
-By analyzing factors like GDP, social support, and healthy life expectancy, this notebook explores how nations cluster based on happiness-related metrics.
+This project applies **K-Means Clustering** to the *World Happiness Report* dataset to find groups of countries with similar social and economic characteristics.
+Using factors like GDP, social support, and healthy life expectancy, the notebook explores how countries cluster based on happiness-related metrics.
 
 ---
 
 ### Dataset
 
 **File:** `happiness_report.csv`
-The dataset contains the following key features:
 
 | Feature                        | Description                          |
 | ------------------------------ | ------------------------------------ |
@@ -28,50 +27,49 @@ The dataset contains the following key features:
 ### Steps and Methods
 
 1. **Data Import & Cleaning**
-   Loaded and inspected the dataset using `pandas`, removed unused columns, and handled scaling with `StandardScaler`.
+   Loaded and inspected the dataset with `pandas` and removed unused columns.
 
 2. **Exploratory Data Analysis (EDA)**
-   Visualized feature distributions and correlations using `matplotlib` and `seaborn` pairplots.
+   Plotted feature distributions and correlations with `matplotlib` and `seaborn` pairplots.
 
 3. **Data Scaling**
-   Standardized features for equal weighting in clustering.
+   Standardized features with `StandardScaler` so they have equal weight in clustering.
 
 4. **Elbow Method**
-   Determined the optimal number of clusters (`k ≈ 3`) using the Within-Cluster Sum of Squares (WCSS).
+   Chose the number of clusters (`k ≈ 3`) using the Within-Cluster Sum of Squares (WCSS).
 
 5. **K-Means Clustering**
-   Applied `KMeans(n_clusters=3)` to form distinct country groups.
+   Applied `KMeans(n_clusters=3)` to group the countries.
 
 6. **Cluster Analysis**
-   Identified cluster centers and interpreted their feature patterns.
+   Looked at the cluster centers and their feature patterns.
 
 7. **Geographical Visualization**
-   Created a **choropleth map** using `plotly` to display clusters globally, with the `azimuthal equal area` projection for a planet-like appearance.
+   Made a **choropleth map** with `plotly` to show the clusters on a world map, using the `azimuthal equal area` projection.
 
 ---
 
 ### Key Findings
 
-* **Cluster 0:** High GDP, strong social support, high life expectancy, low corruption — *most developed countries*.
-* **Cluster 1:** Medium GDP and social support, moderate life expectancy — *transitional economies*.
-* **Cluster 2:** Low GDP, lower social support, high corruption — *developing nations*.
+* **Cluster 0:** High GDP, strong social support, high life expectancy, low corruption (most developed countries).
+* **Cluster 1:** Medium GDP and social support, moderate life expectancy (transitional economies).
+* **Cluster 2:** Low GDP, lower social support, high corruption (developing countries).
 
 ---
 
 ### Technologies Used
 
-* **Python 3**
-* **pandas**, **numpy**
-* **matplotlib**, **seaborn**
-* **scikit-learn**
-* **plotly**
+* Python 3
+* pandas, numpy
+* matplotlib, seaborn
+* scikit-learn
+* plotly
 
 ---
 
-### Visualization Example
+### Choropleth Map Code
 
 ```python
-# Example: Choropleth Map of Clusters
 data = dict(type='choropleth',
             locations=happy_df_cluster["Country or region"],
             locationmode='country names',
@@ -104,20 +102,13 @@ iplot(choromap)
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/world-happiness-kmeans.git
-   cd world-happiness-kmeans
+   git clone https://github.com/Helia-Karisani/k-means-world-report.git
+   cd k-means-world-report
    ```
-2. Install dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. Install the libraries listed above.
 3. Open the notebook:
 
    ```bash
    jupyter notebook "K-Means clustering-world-report.ipynb"
    ```
-4. Run all cells to reproduce results and plots.
-
-
-
+4. Run all cells.
